@@ -15,4 +15,3 @@ Join the Global Boarding Pass ૮ ˶ᵔ ᵕ ᵔ˶ ა
 
 <img src="wordcloud/wordcloud.png" alt="WordCloud" width="100%">
 </div>
-![Uploading image.png…]()
