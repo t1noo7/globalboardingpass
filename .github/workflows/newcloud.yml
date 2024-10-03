@@ -1,4 +1,4 @@
-name: "wordcloud"
+name: "New Global Boarding Pass"
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
 jobs:
   newCloud:
     runs-on: ubuntu-latest
-    if: startsWith(github.event.pull_request.title, 'New Word Cloud')
+    if: startsWith(github.event.pull_request.title, 'New Global Boarding Pass')
     steps:
 
     - name: Checkout
