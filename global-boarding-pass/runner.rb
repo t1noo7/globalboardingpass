@@ -87,7 +87,7 @@ class Runner
     if @development
       puts "Add #{CloudTypes::CLOUDLABELS[-2]}"
     else
-      `git add previous_clouds/`
+      `git add previous_globalpasses/`
       `git diff`
       `git config --global user.email "github-action-bot@example.com"`
       `git config --global user.name "github-actions[bot]"`
@@ -131,7 +131,7 @@ class Runner
 
   def generate_cloud
     # Create new word cloud
-    result = system('sort -R global-boarding-pass/wordlist.txt | global-boarding-pass_cli --imagefile global-boarding-pass/wordcloud.png --prefer_horizontal 0.5 --repeat --fontfile global-boarding-pass/Montserrat-Bold.otf --background black --colormask images/colourMask.jpg --width 700 --height 400 --regexp "\w[\w\' !?#@+-.]+" --no_collocations --min_font_size 10 --max_font_size 120')
+    result = system('sort -R global-boarding-pass/wordlist.txt | wordcloud_cli --imagefile global-boarding-pass/wordcloud.png --prefer_horizontal 0.5 --repeat --fontfile global-boarding-pass/Montserrat-Bold.otf --background black --colormask images/colourMask.jpg --width 700 --height 400 --regexp "\w[\w\' !?#@+-.]+" --no_collocations --min_font_size 10 --max_font_size 120')
     # Failed cloud generation
     unless result
       comment = "Sorry, something went wrong... the global boarding pass did not update :("
