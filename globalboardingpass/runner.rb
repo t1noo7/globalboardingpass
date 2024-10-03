@@ -131,7 +131,7 @@ class Runner
 
   def generate_cloud
     # Create new word cloud
-    result = system('sort -R globalboardingpass/wordlist.txt | globalboardingpass_cli --imagefile globalboardingpass/wordcloud.png --prefer_horizontal 0.5 --repeat --fontfile globalboardingpass/Montserrat-Bold.otf --background black --colormask images/colourMask.jpg --width 700 --height 400 --regexp "\w[\w\' !?#@+-.]+" --no_collocations --min_font_size 10 --max_font_size 120')
+    result = system('sort -R globalboardingpass/wordlist.txt | wordcloud_cli --imagefile globalboardingpass/wordcloud.png --prefer_horizontal 0.5 --repeat --fontfile globalboardingpass/Montserrat-Bold.otf --background black --colormask images/colourMask.jpg --width 700 --height 400 --regexp "\w[\w\' !?#@+-.]+" --no_collocations --min_font_size 10 --max_font_size 120')
     # Failed cloud generation
     unless result
       comment = "Sorry, something went wrong... the global boarding pass did not update :("
