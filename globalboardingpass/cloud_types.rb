@@ -1,21 +1,21 @@
 module CloudTypes
   CLOUDLABELS = [
-    "quarantine",
-    "food",
-    "company",
-    "podcast",
-    "2021",
-    "travel",
+    "unclogging",
+    "airliving",
+    "atoffice",
+    "hentai",
+    "onthebedwith",
+    "diveintocrabnoodlesoup",
     "username",
   ]
 
   CLOUDPROMPTS = [
-    "Favourite Quarantine Passtime? :lock: :tennis: :video_game:",
-    "Favourite Food? :yum: :pizza: :cookie:",
-    "Favourite/Dream Company? :money_with_wings: :star2: :chart_with_upwards_trend:",
-    "What podcast are you currently listening to? :microphone: :headphones: :notes:",
-    "What are you looking forward to in 2021? :tada: :sunglasses: :confetti_ball:",
-    "Where are you hoping to travel next? :airplane: :earth_americas: :luggage:",
+    "awesome--------less 🫥",
+    "Chasing sun...nope, chasing smt else 🛸👽𓁿",
+    "Fresh air...silent air...squishing air...( ＾◡＾)っ ( ͜. ㅅ ͜. ) Juicy ",
+    "Onichannnn yamete ﮩـﮩﮩ٨ـ🫀ﮩ٨ـﮩﮩ٨ـ",
+    "𓆝 𓆟 𓆞 𓆝 𓆟",
+    "I feel smt s*cking off ⚕...",
     "Global Boarding Pass 🖍️🫠"
   ]
 end
