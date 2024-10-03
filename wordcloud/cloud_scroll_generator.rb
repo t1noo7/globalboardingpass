@@ -28,10 +28,10 @@ class CloudScrollGenerator
 
         ## #{CloudTypes::CLOUDPROMPTS[-2]}
 
-        <img src="#{previous_cloud_url}" alt="WordCloud" width="100%">
+        <img src="#{previous_cloud_url}" alt="GlobalBoardingPass" width="100%">
 
-        ![Word Cloud Words Badge](https://img.shields.io/badge/Words%20in%20this%20Cloud-#{current_words_added}-informational?labelColor=7D898B)
-        ![Word Cloud Contributors Badge](https://img.shields.io/badge/Contributors%20this%20Cloud-#{current_contributors.size}-blueviolet?labelColor=7D898B)
+        ![Words Badge](https://img.shields.io/badge/Words%20in%20this%20Cloud-#{current_words_added}-informational?labelColor=7D898B)
+        ![Contributors Badge](https://img.shields.io/badge/Contributors%20in%20this%20Cloud-#{current_contributors.size}-blueviolet?labelColor=7D898B)
 
 
     HTML
@@ -52,7 +52,7 @@ class CloudScrollGenerator
   end
 
   def previous_cloud_url
-    "https://github.com/t1noo7/t1noo7/blob/main/previous_clouds/#{CloudTypes::CLOUDLABELS[-2]}_cloud#{CloudTypes::CLOUDLABELS.size - 1}.png"
+    "https://github.com/t1noo7/Global-boarding-pass/blob/main/previous_clouds/#{CloudTypes::CLOUDLABELS[-2]}_cloud#{CloudTypes::CLOUDLABELS.size - 1}.png"
   end
 
   attr_reader :octokit
