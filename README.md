@@ -20,4 +20,4 @@ Join the Global Boarding Pass ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა
 <img src="https://raw.githubusercontent.com/t1noo7/globalboardingpass/main/globalboardingpass/wordcloud.png" alt="GlobalBoardingPass" width="100%">
 </div>
 
-[![Github Badge](https://img.shields.io/badge/-@Satyajit--Chaudhuri-24292e?style=flat&logo=Github&logoColor=white&link=https://github.com/Satyajit-Chaudhuri)](https://github.com/Satyajit-Chaudhuri)
+[![Github Badge]()]()
