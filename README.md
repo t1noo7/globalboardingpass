@@ -14,7 +14,7 @@ Join the Global Boarding Pass ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა
 
 ## Global Boarding Pass 🖍️🫠
 
-![Word Cloud Words Badge](https://img.shields.io/badge/Words%20in%20this%20Cloud-126-informational?labelColor=003995)
+![Word Cloud Words Badge](https://img.shields.io/badge/Boarding%20Pass%20in%20this%20Global-126-informational?labelColor=003995)
 ![Word Cloud Contributors Badge](https://img.shields.io/badge/Cloud%20Contributors-110-blueviolet?labelColor=25004e)
 
 <img src="https://raw.githubusercontent.com/t1noo7/globalboardingpass/main/globalboardingpass/wordcloud.png" alt="GlobalBoardingPass" width="100%">
