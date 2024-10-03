@@ -12,7 +12,6 @@ Join the Global Boarding Pass ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა
 
 <div align="center">
 
-## Global Boarding Pass 🖍️🫠
 ## #{CloudTypes::CLOUDPROMPTS.last}
 
 ![Passes Badge](https://img.shields.io/badge/Boarding%20Passes%20in%20this%20Global-#{current_words_added}-informational?labelColor=003995)
