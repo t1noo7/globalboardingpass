@@ -1,7 +1,7 @@
 require_relative "./cloud_types"
 
 class CommentGenerator
-  NEW_CLOUD_URL = "https://raw.githubusercontent.com/t1noo7/t1noo7/main/previous_clouds/#{CloudTypes::CLOUDLABELS[-2]}_cloud#{CloudTypes::CLOUDLABELS.size - 1}.png"
+  NEW_CLOUD_URL = "https://raw.githubusercontent.com/t1noo7/Global-boarding-pass/main/previous_globalpasses/#{CloudTypes::CLOUDLABELS[-2]}_cloud#{CloudTypes::CLOUDLABELS.size - 1}.png"
   ADDWORD = 'add'
   SHUFFLECLOUD = 'shuffle'
   WORDS_INITALIZED = 3
@@ -23,8 +23,8 @@ class CommentGenerator
 
     markdown = <<~HTML
 
-    ## :cloud: :pencil2: Thanks for participating in our latest cloud!
-    **:star2: Enjoyed yourself? [Add a word](https://github.com/t1noo7) to the NEW world :fire:**
+    ## :cloud: :pencil2: Thanks for participating in our latest World!
+    **:star2: Enjoyed yourself? [Add a word](https://github.com/t1noo7) to the NEW World :fire:**
 
     ![Words Badge](https://img.shields.io/badge/Words%20in%20#{CloudTypes::CLOUDLABELS[-2]}%20cloud-#{current_words_added}-informational?labelColor=7D898B)
     ![Contributors Badge](https://img.shields.io/badge/Contributors%20in%20#{CloudTypes::CLOUDLABELS[-2]}%20cloud-#{current_contributors.size}-blueviolet?labelColor=7D898B)
