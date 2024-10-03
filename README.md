@@ -22,4 +22,4 @@ Join the Global Boarding Pass ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა
 
 
 
- Check out the [previous pass](https://github.com/t1noo7/globalboardingpass/blob/main/previous_globalpasses/previous_globalpasses.md#where-are-you-hoping-to-travel-next-airplane-earth_americas-luggage) to see our community's **Where are you hoping to travel next? :airplane: :earth_americas: :luggage:**
+ Check out the [previous pass](https://github.com/t1noo7/globalboardingpass/blob/main/previous_globalpasses/previous_globalpasses.md#i-feel-smt-s*cking-off-⚕...) to see our community's **I feel smt s*cking off ⚕...**
