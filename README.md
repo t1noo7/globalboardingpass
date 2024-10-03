@@ -1,6 +1,6 @@
 <h3>
   
-[<b>▷▻⊳Hellsaway ( ͜ₒ ㅅ ͜ ₒ)ʰᵘʰ✧ ς(＾◡＾ ) ⊲◅◁</b>](https://github.com/t1noo7/t1noo7)    
+[<b>⊲◅◁Hellsaway ( ͜ₒ ㅅ ͜ ₒ)ʰᵘʰ✧ ς(＾◡＾ ) </b>](https://github.com/t1noo7/t1noo7)    
 #
 <!--✏️WORDBOARD --> 
 <h2 align="center">
