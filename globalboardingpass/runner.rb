@@ -42,7 +42,7 @@ class Runner
     if command == SHUFFLECLOUD && word.nil?
       generate_cloud
       message = "@#{@user} regenerated the Pass"
-    elsif command == ADDWORD
+    elsif command == ADDPASS
       word = add_to_wordlist(word)
       generate_cloud
       message = "@#{@user} added '#{word}' to the Pass"
