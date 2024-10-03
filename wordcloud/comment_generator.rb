@@ -26,8 +26,8 @@ class CommentGenerator
     ## :cloud: :pencil2: Thanks for participating in our latest cloud!
     **:star2: Enjoyed yourself? [Add a word](https://github.com/t1noo7) to the NEW world :fire:**
 
-    ![Word Cloud Words Badge](https://img.shields.io/badge/Words%20in%20#{CloudTypes::CLOUDLABELS[-2]}%20cloud-#{current_words_added}-informational?labelColor=7D898B)
-    ![Word Cloud Contributors Badge](https://img.shields.io/badge/Contributors%20in%20#{CloudTypes::CLOUDLABELS[-2]}%20cloud-#{current_contributors.size}-blueviolet?labelColor=7D898B)
+    ![Words Badge](https://img.shields.io/badge/Words%20in%20#{CloudTypes::CLOUDLABELS[-2]}%20cloud-#{current_words_added}-informational?labelColor=7D898B)
+    ![Contributors Badge](https://img.shields.io/badge/Contributors%20in%20#{CloudTypes::CLOUDLABELS[-2]}%20cloud-#{current_contributors.size}-blueviolet?labelColor=7D898B)
 
     :tada: Check out the final product :tada:
 
@@ -35,10 +35,10 @@ class CommentGenerator
 
       ## #{CloudTypes::CLOUDPROMPTS[-2]}
 
-      <img src="#{NEW_CLOUD_URL}" alt="WordCloud" width="100%">
+      <img src="#{NEW_CLOUD_URL}" alt="GlobalBoardingPass" width="100%">
     </div>
 
-    ### Thanks to everyone who added a word to the cloud
+    ### Thanks for dropping here!
 
     HTML
 
