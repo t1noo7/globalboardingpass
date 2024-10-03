@@ -61,7 +61,7 @@ class Runner
 
   def new_cloud
     if @user == USER
-      File.open('previous_clouds/previous_clouds.md', 'a') do |f|
+      File.open('previous_globalpasses/previous_globalpasses.md', 'a') do |f|
         f.puts add_to_cloud_scroll
       end
       move_old_cloud
@@ -81,9 +81,9 @@ class Runner
   private
 
   def move_old_cloud
-    `mv globalboardingpass/wordcloud.png previous_clouds/#{CloudTypes::CLOUDLABELS[-2]}_cloud#{CloudTypes::CLOUDLABELS.size - 1}.png`
-    `mv globalboardingpass/wordlist.txt previous_clouds/#{CloudTypes::CLOUDLABELS[-2]}_cloud#{CloudTypes::CLOUDLABELS.size - 1}.txt`
-    `touch wordcloud/wordlist.txt`
+    `mv global-boarding-pass/wordcloud.png previous_globalpasses/#{CloudTypes::CLOUDLABELS[-2]}_cloud#{CloudTypes::CLOUDLABELS.size - 1}.png`
+    `mv global-boarding-pass/wordlist.txt previous_globalpasses/#{CloudTypes::CLOUDLABELS[-2]}_cloud#{CloudTypes::CLOUDLABELS.size - 1}.txt`
+    `touch global-boarding-pass/wordlist.txt`
     if @development
       puts "Add #{CloudTypes::CLOUDLABELS[-2]}"
     else
@@ -98,7 +98,7 @@ class Runner
 
   def create_new_cloud
     new_words = octokit.get_pull_request.body.split.grep(PERSONAL_REGEX).join("\n")
-    File.open('globalboardingpass/wordlist.txt', 'w') { |file| file.puts new_words }
+    File.open('global-boarding-pass/wordlist.txt', 'w') { |file| file.puts new_words }
     generate_cloud
     write("New '#{CloudTypes::CLOUDLABELS.last}' global boarding pass generated")
   end
@@ -117,7 +117,7 @@ class Runner
     # Check for spaces
     word = word.gsub("_", " ")
     # Add word to list
-    File.open('globalboardingpass/wordlist.txt', 'a') do |f|
+    File.open('global-boarding-pass/wordlist.txt', 'a') do |f|
       f.puts word
     end
     word
@@ -131,7 +131,7 @@ class Runner
 
   def generate_cloud
     # Create new word cloud
-    result = system('sort -R wordcloud/wordlist.txt | wordcloud_cli --imagefile wordcloud/wordcloud.png --prefer_horizontal 0.5 --repeat --fontfile wordcloud/Montserrat-Bold.otf --background black --colormask images/colourMask.jpg --width 700 --height 400 --regexp "\w[\w\' !?#@+-.]+" --no_collocations --min_font_size 10 --max_font_size 120')
+    result = system('sort -R global-boarding-pass/wordlist.txt | global-boarding-pass_cli --imagefile global-boarding-pass/wordcloud.png --prefer_horizontal 0.5 --repeat --fontfile global-boarding-pass/Montserrat-Bold.otf --background black --colormask images/colourMask.jpg --width 700 --height 400 --regexp "\w[\w\' !?#@+-.]+" --no_collocations --min_font_size 10 --max_font_size 120')
     # Failed cloud generation
     unless result
       comment = "Sorry, something went wrong... the global boarding pass did not update :("
@@ -145,7 +145,7 @@ class Runner
     if @development
       puts message
     else
-      `git add README.md globalboardingpass/wordcloud.png globalboardingpass/wordlist.txt`
+      `git add README.md global-boarding-pass/wordcloud.png global-boarding-pass/wordlist.txt`
       `git diff`
       `git config --global user.email "github-action-bot@example.com"`
       `git config --global user.name "github-actions[bot]"`
@@ -168,7 +168,7 @@ class Runner
   end
 
   def acknowledge_issue
-    octokit.add_label(label: 'wordcloud')
+    octokit.add_label(label: 'globalboardingpass')
     octokit.add_reaction(reaction: 'eyes')
     octokit.close_issue
   end
