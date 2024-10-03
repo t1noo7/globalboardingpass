@@ -46,7 +46,7 @@ class OctokitClient
     @octokit.pull_request(@repository, issue_number)
   end
 
-  def issues(labels: 'wordcloud')
+  def issues(labels: 'globalboardingpass')
     @issues ||= @octokit.list_issues(
       @repository,
       state: 'closed',
