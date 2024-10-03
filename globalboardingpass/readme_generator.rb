@@ -45,11 +45,12 @@ Join the Global Boarding Pass ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა
 <div align="center">
 
 ## Global Boarding Pass 🖍️🫠
+## #{CloudTypes::CLOUDPROMPTS.last}
 
-![Word Cloud Words Badge](https://img.shields.io/badge/Boarding%20Pass%20in%20this%20Global-126-informational?labelColor=003995)
-![Word Cloud Contributors Badge](https://img.shields.io/badge/Cloud%20Contributors-110-blueviolet?labelColor=25004e)
+![Passes Badge](https://img.shields.io/badge/Boarding%20Passes%20in%20this%20Global-#{current_words_added}-informational?labelColor=003995)
+![Contributors Badge](https://img.shields.io/badge/Cloud%20Contributors-#{current_contributors.size}-blueviolet?labelColor=25004e)
 
-<img src="https://raw.githubusercontent.com/t1noo7/globalboardingpass/main/globalboardingpass/wordcloud.png" alt="GlobalBoardingPass" width="100%">
+<img src="#{WORD_CLOUD_URL}" alt="GlobalBoardingPass" width="100%">
 </div>
 
 [![Github Badge](https://img.shields.io/badge/-@Satyajit--Chaudhuri-24292e?style=flat&logo=Github&logoColor=white&link=https://github.com/Satyajit-Chaudhuri)](https://github.com/Satyajit-Chaudhuri)
@@ -58,10 +59,14 @@ Join the Global Boarding Pass ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა
     # TODO: [![Github Badge](https://img.shields.io/badge/-@username-24292e?style=flat&logo=Github&logoColor=white&link=https://github.com/username)](https://github.com/username)
 
     current_contributors.each do |username, count|
+      markdown.concat("[![Github Badge](https://img.shields.io/badge/-@#{format_username(username)}-24292e?style=flat&logo=Github&logoColor=white&link=https://github.com/#{username})](https://github.com/#{username}) ")
     end
 
-    markdown.concat()
+    markdown.concat("\n\n Check out the [previous word cloud](#{previous_cloud_url}) to see our community's **#{CloudTypes::CLOUDPROMPTS[-2]}**")
 
+    markdown.concat("</div>")
+
+    markdown.concat("\n\n ### Need inspiration for your own README? Check out [How to Stand out on GitHub using Profile READMEs](https://medium.com/better-programming/how-to-stand-out-on-github-with-profile-readmes-dfd2102a3490?source=friends_link&sk=61df9c4b63b329ad95528b8d7c00061f)")
   end
 
   private
@@ -72,7 +77,7 @@ Join the Global Boarding Pass ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა
 
   def previous_cloud_url
     url_end = CloudTypes::CLOUDPROMPTS[-2].gsub(' ', '-').gsub(':', '').gsub('?', '').downcase
-    "previous_globalpasses/previous_globalpasses.md##{url_end}"
+    "https://github.com/t1noo7/globalboardingpass/blob/main/previous_globalpasses/previous_globalpasses.md##{url_end}"
   end
 
   attr_reader :octokit
