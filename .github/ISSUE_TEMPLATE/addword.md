@@ -1,7 +1,7 @@
-Just replace <INSERT-WORD> with your word - don't remove the `wordcloud|add|`   
+Just replace <INSERT-WORD> with your word - don't remove the `globalboardingpass|add|`   
 Next click 'Submit new issue'
 
-**Note: Please give the wordcloud a few minutes to update as Github sometimes caches images :hourglass:**  
+**Note: Please give the globalboardingpass a few minutes to update as Github sometimes caches images :hourglass:**  
 Don't worry, if your word is not properly added, a comment will be added to this issue
 
 **Code of Conduct:**  
