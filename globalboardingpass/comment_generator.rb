@@ -1,7 +1,7 @@
 require_relative "./cloud_types"
 
 class CommentGenerator
-  NEW_CLOUD_URL = "https://raw.githubusercontent.com/t1noo7/Global-boarding-pass/main/previous_globalpasses/#{CloudTypes::CLOUDLABELS[-2]}_cloud#{CloudTypes::CLOUDLABELS.size - 1}.png"
+  NEW_CLOUD_URL = "https://raw.githubusercontent.com/t1noo7/globalboardingpass/main/previous_globalpasses/#{CloudTypes::CLOUDLABELS[-2]}_cloud#{CloudTypes::CLOUDLABELS.size - 1}.png"
   ADDWORD = 'add'
   SHUFFLECLOUD = 'shuffle'
   WORDS_INITALIZED = 3
