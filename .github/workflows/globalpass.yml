@@ -4,12 +4,8 @@ on:
   issues:
     types: [opened]
 
-permissions:
-  issues: write
-  contents: read
-
 jobs:
-  addWord:
+  addPass:
     runs-on: ubuntu-latest
     if: startsWith(github.event.issue.title, 'globalboardingpass|')
     steps:
