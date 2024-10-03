@@ -13,5 +13,5 @@ Join the Global Boarding Pass ૮ ˶ᵔ ᵕ ᵔ˶ ა
 ![Words](https://img.shields.io/badge/Words%20in%20this%20Cloud-1-informational?labelColor=003995)
 ![Contributors](https://img.shields.io/badge/Cloud%20Contributors-1-blueviolet?labelColor=25004e)
 
-<img src="wordcloud/wordcloud.png" alt="WordCloud" width="100%">
+<img src="global-boarding-pass/wordcloud.png" alt="WordCloud" width="100%">
 </div>
