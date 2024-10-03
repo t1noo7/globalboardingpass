@@ -36,7 +36,7 @@ jobs:
         EVENT_USER_LOGIN: ${{ github.event.issue.user.login }}
       run: |
         ruby <<- EORUBY
-          require './wordcloud/runner'
+          require './global-boarding-pass/runner'
           
           Runner.new(
             github_token: '${{ secrets.GITHUB_TOKEN }}',
