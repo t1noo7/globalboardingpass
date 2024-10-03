@@ -12,12 +12,16 @@ Join the Global Boarding Pass ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა
 
 <div align="center">
 
-## #{CloudTypes::CLOUDPROMPTS.last}
+## Global Boarding Pass 🖍️🫠
 
-![Passes Badge](https://img.shields.io/badge/Boarding%20Passes%20in%20this%20Global-#{current_words_added}-informational?labelColor=003995)
-![Contributors Badge](https://img.shields.io/badge/Cloud%20Contributors-#{current_contributors.size}-blueviolet?labelColor=25004e)
+![Passes Badge](https://img.shields.io/badge/Boarding%20Passes%20in%20this%20Global-0-informational?labelColor=003995)
+![Contributors Badge](https://img.shields.io/badge/Cloud%20Contributors-0-blueviolet?labelColor=25004e)
 
-<img src="#{WORD_CLOUD_URL}" alt="GlobalBoardingPass" width="100%">
-
-[![Github Badge](https://img.shields.io/badge/-@username-24292e?style=flat&logo=Github&logoColor=white&link=https://github.com/username)](https://github.com/username)
+<img src="https://raw.githubusercontent.com/t1noo7/globalboardingpass/main/globalboardingpass/wordcloud.png" alt="GlobalBoardingPass" width="100%">
 </div>
+
+
+
+ Check out the [previous pass](https://github.com/t1noo7/globalboardingpass/blob/main/previous_globalpasses/previous_globalpasses.md#where-are-you-hoping-to-travel-next-airplane-earth_americas-luggage) to see our community's **Where are you hoping to travel next? :airplane: :earth_americas: :luggage:**</div>
+
+ ### Need inspiration for your own README? Check out [How to Stand out on GitHub using Profile READMEs](https://medium.com/better-programming/how-to-stand-out-on-github-with-profile-readmes-dfd2102a3490?source=friends_link&sk=61df9c4b63b329ad95528b8d7c00061f)
