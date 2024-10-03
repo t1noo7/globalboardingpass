@@ -60,10 +60,6 @@ Join the Global Boarding Pass ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა
     end
 
     markdown.concat("\n\n Check out the [previous pass](#{previous_cloud_url}) to see our community's **#{CloudTypes::CLOUDPROMPTS[-2]}**")
-
-    markdown.concat("</div>")
-
-    markdown.concat("\n\n ### Need inspiration for your own README? Check out [How to Stand out on GitHub using Profile READMEs](https://medium.com/better-programming/how-to-stand-out-on-github-with-profile-readmes-dfd2102a3490?source=friends_link&sk=61df9c4b63b329ad95528b8d7c00061f)")
   end
 
   private
