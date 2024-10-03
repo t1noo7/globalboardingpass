@@ -1,7 +1,7 @@
 # require_relative "./cloud_types"
 
 class ReadmeGenerator
-  WORD_CLOUD_URL = 'Global-boarding-pass/wordcloud.png'
+  WORD_CLOUD_URL = 'global-boarding-pass/wordcloud.png'
   ADDWORD = 'add'
   SHUFFLECLOUD = 'shuffle'
   INITIAL_COUNT = 0
@@ -32,7 +32,7 @@ class ReadmeGenerator
     markdown = <<~HTML
 <h3>
   
-[<b>▷▻⊳ 𝐁𝐚𝐜𝐤 𝐓𝐨 𝐏𝐫𝐨𝐟𝐢𝐥𝐞 ⊲◅◁</b>](https://github.com/trinib/trinib)    
+[<b>▷▻⊳ 𝐁𝐚𝐜𝐤 𝐓𝐨 𝐏𝐫𝐨𝐟𝐢𝐥𝐞 ⊲◅◁</b>](https://github.com/t1noo7/t1noo7)    
 #
 <!--✏️WORDBOARD --> 
 <h2 align="center">
@@ -70,7 +70,7 @@ Join the Global Boarding Pass ૮ ˶ᵔ ᵕ ᵔ˶ ა
 
   def previous_cloud_url
     url_end = CloudTypes::CLOUDPROMPTS[-2].gsub(' ', '-').gsub(':', '').gsub('?', '').downcase
-    "previous_clouds/previous_clouds.md##{url_end}"
+    "previous_globalpasses/previous_globalpasses.md##{url_end}"
   end
 
   attr_reader :octokit
