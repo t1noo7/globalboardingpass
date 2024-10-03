@@ -6,7 +6,7 @@ module CloudTypes
     "podcast",
     "2021",
     "travel",
-    "username"
+    "username",
   ]
 
   CLOUDPROMPTS = [
